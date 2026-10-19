@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Web Dev Project Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<!-- Header, holds the main title and author information -->
+	<header>
+		<h1>HTTPS:Securing Information on the Web</h1>
+		<h2>By: Caleb Knapp</h2>
+		<h3>KSU IT 3203: Introduction to Web Development</h3>
+	</header>
+
+	<!-- Navigation Bar -->
+	<nav aria-label="Main navigation">
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="topic1.html">HTTP/HTTPS</a></li>
+			<li><a href="topic2.html">TLS/SSL</a></li>
+			<li><a href="keyconcepts.html">Key Concepts</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="references.html">References</a></li>
+		</ul>
+
+		<img src="sunny.png" alt="Nav Image" class="navimg">
+	</nav>
+
+	<!-- Flex containers using the flexbox model -->
+	<main class="flex-container">
+		<div>
+			<!-- Side content, lists key concepts explored in the topics -->
+			<h2>Key Concepts</h2>
+			<ul>
+				<li>HTTPS and HTTP</li>
+				<li>SSL/TLS Protocols</li>
+				<li>Encryption/Data Security</li>
+				<li>Public and Private Key Cryptography</li>
+				<li>HTTP Protocol Evolution</li>
+			</ul>
+		</div>
+
+		<div>
+			<!-- Introduction to HTTP/HTTPS -->
+			<h2>Introduction</h2>
+			<p>HTTP (Hypertext Transfer Protocol) is a group of stateless, application-level request/response protocols that share 
+				a basic interface, semantics, and messaging structure to enable interaction with network-based systems (Datatracker). 
+				HTTP does NOT encrypt information while the web browser and server communicate and share data. Like HTTPS, HTTP works 
+				by having one party send a request and the other send an HTTP response back.
+			</p>
+			<p>HHTTPS (Hypertext Transfer Protocol Secure) is used to secure data while a web browser and website communicate. 
+				As the secured version of HTTP, its goal is to encrypt sensitive data while the browser and server communicate. 
+				This data can include login information, banking information, insurance details, and anything else you wouldn't 
+				want a stranger to know (Cloudflare). HTTPS uses TLS (Transport Layer Security), an encryption protocol, to secure 
+				communication.
+			</p>
+
+			<h2>Brief History of HTTP/HTTPS </h2>
+			<ul>
+				<li>1990: HTTP was created as a building block of the World Wide Web alongside HTML. At this stage, HTTP could only 
+					perform a very simple task, GET, which required a path to the file being retrieved.
+				</li>
+				<li>1994: SSL (Secure Sockets Layer), which would later evolve into TLS (Transport Layer Security), was created to 
+					protect communication over the internet.
+				</li>
+				<li>1999: Over the course of five years, SSL evolved into TLS, becoming the standard security protocol for HTTPS.</li>
+				<li>Today: After countless tweaks and updates, HTTPS has become much stronger, faster, and more secure. It has also 
+					become far more accessible, allowing websites to adopt it much more easily.
+				</li>
+			</ul>
+		</div>
+
+		<!-- Table for HTTP vs HTTPS-->
+		<div>
+			<h2>HTTP vs HTTPS</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>HTTP</th>
+						<th>HTTPS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hypertext Transfer Protocol</td>
+						<td>Hypertext Transfer Protocol Secure</td>
+					</tr>
+					<tr>
+						<td>Default Port 80</td>
+						<td>Default Port 443</td>
+					</tr>
+					<tr>
+						<td>Outdated, used for old websites</td>
+						<td>Modern and Secure, used for all modern websites</td>
+					</tr>
+					<tr>
+						<td>No encryption or security features</td>
+						<td>Uses SSL/TLS encryption for secure communication</td>
+					</tr>
+					<tr>
+						<td>HTTP/1 and HTTP/2 use TCP/IP. HTTP/3 uses QUIC protocol.</td>
+						<td>Uses HTTP/2 with SSL/TLS to encrypt data during transmission</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+
+	<!-- Footer, contains required class information and link -->
+	<footer>
+		<p>ATTENTION: This project was created for KSU IT 3203 Introduction to Web Development.</p>
+		<p><a href="https://ksuweb.github.io/IT3203/">KSU IT 3203 Website</a></p>
+	</footer>
+</body>
+
+</html>
